@@ -1,0 +1,9 @@
+version: '3'
+services:
+  go:
+    container_name: mp4_to_gif
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
